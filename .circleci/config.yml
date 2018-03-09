@@ -62,7 +62,7 @@ jobs:
           name: Optionally finish release
           shell: /bin/sh
           command: |
-            if [ $ELECTRON_RELEASE" == "1" ] && [ "$AUTO_RELEASE" == "true" ]; then
+            if [ "$ELECTRON_RELEASE" == "1" ] && [ "$AUTO_RELEASE" == "true" ]; then
               echo 'Trying to finish release'
               node script/release.js --automaticRelease
               releaseExitCode=$?
@@ -174,7 +174,7 @@ jobs:
           name: Optionally finish release
           shell: /bin/sh
           command: |
-            if [ $ELECTRON_RELEASE" == "1" ] && [ "$AUTO_RELEASE" == "true" ]; then
+            if [ "$ELECTRON_RELEASE" == "1" ] && [ "$AUTO_RELEASE" == "true" ]; then
               echo 'Trying to finish release'
               node script/release.js --automaticRelease
               releaseExitCode=$?
@@ -290,7 +290,7 @@ jobs:
           name: Optionally finish release
           shell: /bin/sh
           command: |
-            if [ $ELECTRON_RELEASE" == "1" ] && [ "$AUTO_RELEASE" == "true" ]; then
+            if [ "$ELECTRON_RELEASE" == "1" ] && [ "$AUTO_RELEASE" == "true" ]; then
               echo 'Trying to finish release'
               node script/release.js --automaticRelease
               releaseExitCode=$?
@@ -389,7 +389,7 @@ jobs:
           name: Optionally finish release
           shell: /bin/sh
           command: |
-            if [ $ELECTRON_RELEASE" == "1" ] && [ "$AUTO_RELEASE" == "true" ]; then
+            if [ "$ELECTRON_RELEASE" == "1" ] && [ "$AUTO_RELEASE" == "true" ]; then
               echo 'Trying to finish release'
               node script/release.js --automaticRelease
               releaseExitCode=$?
@@ -470,7 +470,7 @@ jobs:
           name: Optionally finish release
           shell: /bin/sh
           command: |
-            if [ $ELECTRON_RELEASE" == "1" ] && [ "$AUTO_RELEASE" == "true" ]; then
+            if [ "$ELECTRON_RELEASE" == "1" ] && [ "$AUTO_RELEASE" == "true" ]; then
               echo 'Trying to finish release'
               node script/release.js --automaticRelease
               releaseExitCode=$?
